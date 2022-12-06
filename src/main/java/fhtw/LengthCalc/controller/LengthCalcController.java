@@ -17,4 +17,9 @@ public class LengthCalcController {
     Float getCentimeter(@PathVariable Float inch){
         return service.getCentimeter(inch);
     }
+
+    @PostMapping("/api/yard/{yard}")
+    Float calcMeter(@PathVariable Float yard){
+        return service.getMeter(yard);
+    }
 }
